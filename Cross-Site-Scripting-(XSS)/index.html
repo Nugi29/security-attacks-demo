@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>XSS Demo</title>
+</head>
+<body>
+  <h2>Submit a comment</h2>
+
+  <form method="post" action="submit.php">
+    <textarea name="comment" rows="4" cols="60" placeholder="Comment"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p>
+    View stored comments (vulnerable to HTML injection): <a href="vulnerable-display.php">vulnerable-display.php</a><br>
+    View stored comments (safe): <a href="secure-display.php">secure-display.php</a>
+  </p>
+  
+</body>
+</html>
